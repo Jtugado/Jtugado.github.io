@@ -1,0 +1,69 @@
+<!Doctype html>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+<style>
+    body {
+        background-color: #778899;
+        font-family: 'Oswald';
+     }
+    form {
+        background-color: white;
+        padding: 20px;
+        width: 220px;
+        border-radius: 10px;
+        margin: 0 auto;
+    }
+    h1 {
+        text-align:center;
+        font-size:30px;
+        width: 100%;
+    }
+    form label {
+        font-weight:bold;
+    }
+    form input{
+        margin-bottom: 5px;
+    }
+    #Submit{
+        background-color: darkgreen;
+        color:white;
+    }
+    #Reset{
+        background-color: red;
+        color:white;  
+    }
+</style>
+</head>
+<body>
+    <form>
+        <h1>Registration Form</h1>
+        <label for="Fname">First name:</label> <br>
+        <input type="text" id="Fname" name="Fname" required><br>
+        <label for="Lname">Last name:</label> <br>
+        <input type="text" id="Lname" name="Lname" required><br>
+        <label for="Nickname">Nickname:</label> <br>
+        <input type="text" id="Nname" name="Nname" required><br>
+        <label for="Email">Email:</label> <br>
+        <input type="email" id="Email" name="Email" required><br>
+        <label for="Password">Password:</label> <br>
+        <input type="password" id="Password" name="Password" required><br>
+        <label for="Date of Birth">Date of Birth:</label> <br>
+        <input type="date" id="birthday" name="birthday" required><br>
+        <label for="Gender">Gender:</label> <br>
+        <input type="radio" id="Male" name="Gender" value="Male">
+        <label for="Male">Male</label>
+        <input type="radio" id="Female" name="Gender" value="Female">
+        <label for="Female">Female</label>
+        <input type="radio" id="Others" name="Gender" value="Others">
+        <label for="Others">Others</label><br>
+        <label for="Mobile">Mobile:</label> <br>
+        <input type="number" id="mobile" name="mobile" required><br>
+        <label for="Address">Address:</label> <br>
+        <textarea name="description" cols="25" rows="10" required></textarea><br>
+        <button type="submit" id="Submit">Submit</button> 
+        <button type="reset" id="Reset">Reset</button> 
+    </form>
+</body>
+</html>
